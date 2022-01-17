@@ -25,7 +25,7 @@ while True:
 
     #Loop lines and add connected players to array
     for Line in Lines:
-        if "Player connected" in Line:
+        if "Player connected" or "Player disconnected" in Line:
             connected.append(Line)
 
     #If connected contains information move on
